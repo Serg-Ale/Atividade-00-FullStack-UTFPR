@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Exercícios sobre JS, ES6, Contexto e OO</title>
+  <style type="text/css" media="all">
+    p>span {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Exercícios sobre JS, ES6, Contexto e OO</h1>
+
+  <p><span>Exercício 1: </span> implemente uma função que ao clicar no botão exercício 1 a seguir, insira o valor do
+    input como um elemento li no elemento ul a seguir. Utilize o conceito de <a
+      href="http://es6-features.org/#StringInterpolation">string interpolation</a></p>
+  <p>
+    <input id="content01" type="text">
+    <button onclick=handleEx01()>exercício 1</button>
+  </p>
+  <ul id="list01"></ul>
+
+  <p><span>Exercício 2: </span> implemente uma função que atualize o valor do elemento li, enquanto o usuário digita.
+    Utilize o evento keyup ou keydown.</p>
+  <p>
+    <input id="content02" onkeydown=handleEx02() onkeyup=handleEx02() type="text">
+  </p>
+  <ul id="list02"></ul>
+
+  <p><span>Exercício 3: </span> implemente uma função que receba como parâmetro um vetor com os seguintes valores de
+    tipo String: abacate, uva, maracujá, mamão, cereja, jaboticaba, jaca, guaraná. Para cade elemento do vetor, deve ser
+    gerado um elemento li com o valor da String; e inserido no elemento ul a seguir. Utilize o método forEach do Array.
+  </p>
+  <ul id="list03"></ul>
+
+  <p><span>Exercício 4: </span> Extenda o exercício anterior, mas no elemento input, deve ser implementada uma função de
+    busca pelas Strings que começarem com as mesmas letras inseridas no input. Utilize o método filter do Array.</p>
+  <p>
+    <input id="input04" type="text">
+  </p>
+
+  <p><span>Exercício 5: </span> extenda o exercício anterior, armazene os valores do vetor dentro de objetos JavaScript
+    com as propriedades nome como valor da String e checked como um booleano de valor false. O valor da variável
+    booleana deve ser apresentado em um checkbox dentro do elemento li. Se o checkbox for clicado, o checkbox deve ser
+    checado e o valor tem que ser refletido no vetor de valores (como uma TodoList). Utilize o método map do Array.</p>
+  <ul id="list05"></ul>
+
+  <p><span>Exercício 6: </span> extenda o exercício anterior, e apresente o elemento p a seguir o número de elementos do
+    vetor que foram checados. Utilize o método filter ou reduce do Array.</p>
+  <p id="checkedCount"></p>
+
+  <p><span>Exercício 7: </span> encapsule toda a lógica dos exercícios anteriores (3-6) dentro de uma classe, utilizando
+    o conceito de closures ou classes do ES6. Implemente uma funcionalidade de inserção de novos elementos na lista.</p>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
